@@ -1,0 +1,13 @@
+syntax = "v1"
+
+import (
+	"api/test.api"
+)
+
+info(
+	title: "测试"
+	desc: ""
+	author: ""
+	email: ""
+	version: ""
+)

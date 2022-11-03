@@ -1,0 +1,32 @@
+syntax = "v1"
+
+info(
+    title: "测试接口"
+    desc: "测试"
+    author: "d"
+    email: "donghui_sun@yeah.net"
+    version: "0.0.1"
+)
+
+// 请求集
+type (
+    Request {}
+)
+
+// 响应集
+type (
+    Response{}
+)
+
+
+@server(
+    prefix: api
+    group: api/test
+)
+
+service test-api {
+    @doc "新增"
+    @handler Add
+    post /add (Request) returns (Response)
+
+}
